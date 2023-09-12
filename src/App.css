@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ html {
+  font-size: 62.5%;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ body {
+  background: rgb(3,0,31);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+ }
 
-.App-header {
-  background-color: #282c34;
+ .App {
   min-height: 100vh;
+  display: flex;
+ }
+
+ .sidebar{
+  flex: 3;
+  border-right: 1px solid rgb(255, 255, 255);
+ }
+
+ .main {
+  flex: 9;
+ }
+
+ .logo {
+  margin-right: 1rem;
+ }
+
+ .brand {
+  font-size: 2rem;
+
+ }
+
+ .upperside{
+  padding: 2.5rem;
+ }
+
+ .uppersidetop{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+ }
+
+
+ .addbtn {
+  height: 2rem;
+  padding-right: 1rem;
+ }
+
+ .midbtn {
+  background: rgb(4, 31, 90);
+  color: white;
+border: none;
+padding: 1.5rem;
+width: 25rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 3rem;
+margin: 0 auto;
+border-radius: 0.5rem;
+ }
+
+ .main{
+  min-height: calc(100vh-14rem);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 6rem 10rem;
+ }
+
+
+ .chats{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh-17rem);
+ }
+
+ .chat{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+
+ }
+ .chatFooter{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ }
+
+ .inp {
+  padding: 0.5rem;
+  background: rgba(28,30,58,1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+    width: 70rem;
+ }
+
+ .inp>input {
+  width: calc(100%-3rem);
+  outline: none;
+  padding: 1.25rem;
   color: white;
-}
+ }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .inp>input, .send{
+  background: transparent;
+  border: none;
+ }
